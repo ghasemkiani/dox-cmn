@@ -5,7 +5,6 @@ const {Component} = require("@ghasemkiani/dox/component");
 
 class Obj extends Component {
 	render(wnode) {
-		console.log("obj");
 		let name = this.wnode.attr("name");
 		let obj = {};
 		this.sub("name", function (data) {
