@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/itm
+//	@ghasemkiani/dox-cmn/itm
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Itm extends Component {

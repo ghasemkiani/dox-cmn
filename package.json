@@ -1,5 +1,5 @@
 {
-  "name": "@ghasemkiani/dox-common",
+  "name": "@ghasemkiani/dox-cmn",
   "version": "1.1.0",
   "description": "Common components for DOX document conversion",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/ghasemkiani/dox-common.git"
+    "url": "git+https://gitlab.com/ghasemkiani/dox-cmn.git"
   },
   "keywords": [
     "javascript",
@@ -18,11 +18,11 @@
   "author": "Ghasem Kiani",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/ghasemkiani/dox-common/issues"
+    "url": "https://gitlab.com/ghasemkiani/dox-cmn/issues"
   },
-  "homepage": "https://gitlab.com/ghasemkiani/dox-common#readme",
+  "homepage": "https://gitlab.com/ghasemkiani/dox-cmn#readme",
   "dependencies": {
-    "@ghasemkiani/commonbase": "github:ghasemkiani/commonbase",
+    "@ghasemkiani/base": "github:ghasemkiani/base",
     "@ghasemkiani/dox": "gitlab:ghasemkiani/dox"
   }
 }

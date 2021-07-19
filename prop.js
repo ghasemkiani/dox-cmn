@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/prop
+//	@ghasemkiani/dox-cmn/prop
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Prop extends Component {

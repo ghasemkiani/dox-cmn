@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/eol
+//	@ghasemkiani/dox-cmn/eol
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Eol extends Component {

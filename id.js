@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/id
+//	@ghasemkiani/dox-cmn/id
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Id extends Component {

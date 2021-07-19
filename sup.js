@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/sup
+//	@ghasemkiani/dox-cmn/sup
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Sup extends Component {

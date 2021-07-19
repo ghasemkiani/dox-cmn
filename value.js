@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/value
+//	@ghasemkiani/dox-cmn/value
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Value extends Component {

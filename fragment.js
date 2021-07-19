@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/fragment
+//	@ghasemkiani/dox-cmn/fragment
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Fragment extends Component {

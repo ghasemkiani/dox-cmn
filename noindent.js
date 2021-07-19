@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/noindent
+//	@ghasemkiani/dox-cmn/noindent
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Noindent extends Component {

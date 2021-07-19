@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/dir
+//	@ghasemkiani/dox-cmn/dir
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Dir extends Component {

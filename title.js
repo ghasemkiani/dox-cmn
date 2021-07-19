@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/title
+//	@ghasemkiani/dox-cmn/title
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Title extends Component {

@@ -1,6 +1,6 @@
-//	@ghasemkiani/dox-common/nonum
+//	@ghasemkiani/dox-cmn/nonum
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {Component} = require("@ghasemkiani/dox/component");
 
 class Nonum extends Component {
