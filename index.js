@@ -1,22 +1,22 @@
 //	@ghasemkiani/dox-cmn
 
-const {Dir, iwdir} = require("@ghasemkiani/dox-cmn/dir");
-const {Eol} = require("@ghasemkiani/dox-cmn/eol");
-const {Fragment} = require("@ghasemkiani/dox-cmn/fragment");
-const {Id} = require("@ghasemkiani/dox-cmn/id");
-const {Itm} = require("@ghasemkiani/dox-cmn/itm");
-const {Msg} = require("@ghasemkiani/dox-cmn/msg");
-const {Name, iwname} = require("@ghasemkiani/dox-cmn/name");
-const {Noindent} = require("@ghasemkiani/dox-cmn/Noindent");
-const {Nonum} = require("@ghasemkiani/dox-cmn/nonum");
-const {Notoc} = require("@ghasemkiani/dox-cmn/notoc");
-const {Num} = require("@ghasemkiani/dox-cmn/num");
-const {Obj} = require("@ghasemkiani/dox-cmn/obj");
-const {Prop, iwprop} = require("@ghasemkiani/dox-cmn/prop");
-const {Sup} = require("@ghasemkiani/dox-cmn/sup");
-const {Title, iwtitle} = require("@ghasemkiani/dox-cmn/title");
-const {Value} = require("@ghasemkiani/dox-cmn/value");
-const {PersianNumbers} = require("@ghasemkiani/dox-cmn/persianNumbers");
+import {Dir, iwdir} from "./dir.js";
+import {Eol} from "./eol.js";
+import {Fragment} from "./fragment.js";
+import {Id} from "./id.js";
+import {Itm} from "./itm.js";
+import {Msg} from "./msg.js";
+import {Name, iwname} from "./name.js";
+import {Noindent} from "./Noindent.js";
+import {Nonum} from "./nonum.js";
+import {Notoc} from "./notoc.js";
+import {Num} from "./num.js";
+import {Obj} from "./obj.js";
+import {Prop, iwprop} from "./prop.js";
+import {Sup} from "./sup.js";
+import {Title, iwtitle} from "./title.js";
+import {Value} from "./value.js";
+import {PersianNumbers} from "./persianNumbers.js";
 
 const tags = {
 	dir: Dir,
@@ -38,7 +38,7 @@ const tags = {
 	persianNumbers: PersianNumbers,
 };
 
-module.exports = {
+export {
 	tags,
 	Dir, iwdir,
 	Eol,

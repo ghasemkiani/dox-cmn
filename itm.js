@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/itm
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Itm extends Component {
 	render(wnode) {
@@ -12,4 +12,4 @@ class Itm extends Component {
 	}
 }
 
-module.exports = {Itm};
+export {Itm};

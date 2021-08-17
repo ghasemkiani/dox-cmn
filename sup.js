@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/sup
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Sup extends Component {
 	render(wnode) {
@@ -11,4 +11,4 @@ class Sup extends Component {
 	}
 }
 
-module.exports = {Sup};
+export {Sup};

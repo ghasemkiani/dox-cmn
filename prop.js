@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/prop
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Prop extends Component {
 	render(wnode) {
@@ -28,4 +28,4 @@ const iwprop = {
 	},
 };
 
-module.exports = {Prop, iwprop};
+export {Prop, iwprop};

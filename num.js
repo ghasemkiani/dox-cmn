@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/num
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Num extends Component {
 	render(wnode) {
@@ -10,4 +10,4 @@ class Num extends Component {
 	}
 }
 
-module.exports = {Num};
+export {Num};

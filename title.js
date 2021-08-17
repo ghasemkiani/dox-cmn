@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/title
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Title extends Component {
 	render(wnode) {
@@ -19,4 +19,4 @@ const iwtitle = {
 	},
 };
 
-module.exports = {Title, iwtitle};
+export {Title, iwtitle};

@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/nonum
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Nonum extends Component {
 	render(wnode) {
@@ -12,4 +12,4 @@ class Nonum extends Component {
 	}
 }
 
-module.exports = {Nonum};
+export {Nonum};

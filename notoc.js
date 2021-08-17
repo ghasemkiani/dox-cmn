@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/notoc
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Notoc extends Component {
 	render(wnode) {
@@ -12,4 +12,4 @@ class Notoc extends Component {
 	}
 }
 
-module.exports = {Notoc};
+export {Notoc};

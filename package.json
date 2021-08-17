@@ -1,7 +1,8 @@
 {
   "name": "@ghasemkiani/dox-cmn",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Common components for DOX document conversion",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +24,7 @@
   "homepage": "https://gitlab.com/ghasemkiani/dox-cmn#readme",
   "dependencies": {
     "@ghasemkiani/base": "github:ghasemkiani/base",
-    "@ghasemkiani/dox": "gitlab:ghasemkiani/dox"
+    "@ghasemkiani/dox": "github:ghasemkiani/dox",
+    "@ghasemkiani/ling": "github:ghasemkiani/ling"
   }
 }

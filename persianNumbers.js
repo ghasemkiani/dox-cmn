@@ -1,9 +1,9 @@
 //	@ghasemkiani/dox-cmn/persianNumbers
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
-const {fa} = require("@ghasemkiani/ling/fa");
-const {Context} = require("@ghasemkiani/dox/context");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
+import {fa} from "@ghasemkiani/ling";
+import {Context} from "@ghasemkiani/dox";
 
 class PersianNumbers extends Component {
 	render(wnode) {
@@ -22,4 +22,4 @@ class PersianNumbers extends Component {
 	}
 }
 
-module.exports = {PersianNumbers};
+export {PersianNumbers};

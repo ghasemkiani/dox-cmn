@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/name
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Name extends Component {
 	render(wnode) {
@@ -15,4 +15,4 @@ const iwname = {
 	},
 };
 
-module.exports = {Name, iwname};
+export {Name, iwname};

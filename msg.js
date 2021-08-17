@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/msg
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Msg extends Component {
 	render(wnode) {
@@ -13,4 +13,4 @@ class Msg extends Component {
 	}
 }
 
-module.exports = {Msg};
+export {Msg};

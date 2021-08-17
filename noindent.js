@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/noindent
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Noindent extends Component {
 	render(wnode) {
@@ -13,4 +13,4 @@ class Noindent extends Component {
 	}
 }
 
-module.exports = {Noindent};
+export {Noindent};

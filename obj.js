@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/obj
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Obj extends Component {
 	render(wnode) {
@@ -20,4 +20,4 @@ class Obj extends Component {
 	}
 }
 
-module.exports = {Obj};
+export {Obj};

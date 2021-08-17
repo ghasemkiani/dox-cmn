@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/dir
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Dir extends Component {
 	render(wnode) {
@@ -16,4 +16,4 @@ const iwdir = {
 	},
 };
 
-module.exports = {Dir, iwdir};
+export {Dir, iwdir};

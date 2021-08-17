@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/fragment
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Fragment extends Component {
 	render(wnode) {
@@ -14,4 +14,4 @@ class Fragment extends Component {
 	}
 }
 
-module.exports = {Fragment};
+export {Fragment};

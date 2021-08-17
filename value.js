@@ -1,7 +1,7 @@
 //	@ghasemkiani/dox-cmn/value
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Component} = require("@ghasemkiani/dox/component");
+import {cutil} from "@ghasemkiani/base";
+import {Component} from "@ghasemkiani/dox";
 
 class Value extends Component {
 	render(wnode) {
@@ -12,4 +12,4 @@ class Value extends Component {
 	}
 }
 
-module.exports = {Value};
+export {Value};
