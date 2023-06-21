@@ -17,6 +17,7 @@ import {Sup} from "./sup.js";
 import {Title, iwtitle} from "./title.js";
 import {Value} from "./value.js";
 import {PersianNumbers} from "./persianNumbers.js";
+import {Script} from "./script.js";
 
 const tags = {
 	dir: Dir,
@@ -36,6 +37,7 @@ const tags = {
 	title: Title,
 	value: Value,
 	persianNumbers: PersianNumbers,
+	script: Script,
 };
 
 export {
@@ -57,4 +59,5 @@ export {
 	Title, iwtitle,
 	Value,
 	PersianNumbers,
+	Script,
 };
