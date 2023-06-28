@@ -21,6 +21,7 @@ import {Script} from "./script.js";
 import {Templates} from "./templates.js";
 import {G} from "./g.js";
 import {Beautifiers} from "./beautifiers.js";
+import {Include} from "./include.js";
 
 const tags = {
 	dir: Dir,
@@ -44,6 +45,7 @@ const tags = {
 	templates: Templates,
 	g: G,
 	beautifiers: Beautifiers,
+	include: Include,
 };
 
 export {
@@ -69,4 +71,5 @@ export {
 	Templates,
 	G,
 	Beautifiers,
+	Include,
 };
