@@ -6,7 +6,7 @@ import {fa} from "@ghasemkiani/ling";
 import {Context} from "@ghasemkiani/dox";
 
 class PersianNumbers extends Component {
-	render(wnode) {
+	async toRender(wnode) {
 		let context = this.context.parent;
 		let flag = !/^\s*(off|no|false)\s*$/i.test(this.wnode.innerString.trim());
 		if (!flag) {

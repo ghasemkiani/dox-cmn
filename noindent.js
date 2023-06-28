@@ -4,7 +4,7 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Noindent extends Component {
-	render(wnode) {
+	async toRender(wnode) {
 		if (this.context.parent) {
 			this.context.parent.indent = false;
 		} else {

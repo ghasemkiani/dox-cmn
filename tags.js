@@ -18,6 +18,9 @@ import {Title, iwtitle} from "./title.js";
 import {Value} from "./value.js";
 import {PersianNumbers} from "./persianNumbers.js";
 import {Script} from "./script.js";
+import {Templates} from "./templates.js";
+import {G} from "./g.js";
+import {Beautifiers} from "./beautifiers.js";
 
 const tags = {
 	dir: Dir,
@@ -38,6 +41,9 @@ const tags = {
 	value: Value,
 	persianNumbers: PersianNumbers,
 	script: Script,
+	templates: Templates,
+	g: G,
+	beautifiers: Beautifiers,
 };
 
 export {
@@ -60,4 +66,7 @@ export {
 	Value,
 	PersianNumbers,
 	Script,
+	Templates,
+	G,
+	Beautifiers,
 };

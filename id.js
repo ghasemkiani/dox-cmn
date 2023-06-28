@@ -4,7 +4,7 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Id extends Component {
-	render(wnode) {
+	async toRender(wnode) {
 		let id = this.wnode.innerString.trim();
 		this.context.parent.component.pub("id", id);
 	}

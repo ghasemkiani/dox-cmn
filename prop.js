@@ -4,7 +4,7 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Prop extends Component {
-	render(wnode) {
+	async toRender(wnode) {
 		let name = this.wnode.attr("name");
 		this.sub("name", function (data) {
 			name = data;
@@ -14,7 +14,7 @@ class Prop extends Component {
 			value = data;
 		});
 		let dummy = wnode.wdocument.ch("div");
-		this.renderBody(dummy);
+		await this.toRenderBody(dummy);
 		if(!value) {
 			value = dummy.innerString;
 		}

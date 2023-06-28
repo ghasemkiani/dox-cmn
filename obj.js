@@ -4,7 +4,7 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Obj extends Component {
-	render(wnode) {
+	async toRender(wnode) {
 		let name = this.wnode.attr("name");
 		let obj = {};
 		this.sub("name", function (data) {
@@ -15,7 +15,7 @@ class Obj extends Component {
 			obj[name] = value;
 		});
 		let dummy = wnode.wdocument.ch("div");
-		this.renderBody(dummy);
+		await this.toRenderBody(dummy);
 		this.context.parent.component.pub("prop", {name, value: obj});
 	}
 }

@@ -4,10 +4,12 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Sup extends Component {
-	render(wnode) {
+	async toRender(wnode) {
+		let wn;
 		wnode.ch("sup", wnode => {
-			this.renderBody(wnode);
+			wn = wnode;
 		});
+		await this.toRenderBody(wn);
 	}
 }
 

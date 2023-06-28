@@ -4,9 +4,9 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Value extends Component {
-	render(wnode) {
+	async toRender(wnode) {
 		let dummy = wnode.wdocument.ch("div");
-		this.renderBody(dummy);
+		await this.toRenderBody(dummy);
 		let value = dummy.innerString;
 		this.context.parent.component.pub("value", value);
 	}
