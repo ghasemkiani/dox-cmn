@@ -9,7 +9,7 @@ class Prop extends Component {
 		this.sub("name", function (data) {
 			name = data;
 		});
-		let value;
+		let value = this.wnode.attr("value");
 		this.sub("value", function (data) {
 			value = data;
 		});

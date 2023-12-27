@@ -35,7 +35,7 @@ const tags = {
 	nonum: Nonum,
 	notoc: Notoc,
 	num: Num,
-	object: Obj,
+	obj: Obj,
 	prop: Prop,
 	sup: Sup,
 	title: Title,
