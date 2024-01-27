@@ -1,21 +1,22 @@
-//	@ghasemkiani/dox-cmn/title
-
 import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Title extends Component {
-	async toRender(wnode) {
-		let dummy = wnode.wdocument.ch("div");
-		await this.toRenderBody(dummy);
-		let title = dummy.innerString;
-		this.context.parent.component.pub("title", title);
+	async toRender(node) {
+		let component = this;
+		let {x} = component;
+		let dummy = x.dch("div");
+		await component.toRenderBody(dummy);
+		let title = x.toStrInner(dummy);
+		component.context.parent.component.pub("title", title);
 	}
 }
 
 const iwtitle = {
 	title: null,
 	onTitle(title) {
-		this.title = title;
+		let component = this;
+		component.title = title;
 	},
 };
 

@@ -1,11 +1,14 @@
 {
 	"name": "@ghasemkiani/dox-cmn",
-	"version": "2.3.0",
+	"version": "2.3.1",
 	"description": "Common components for DOX document conversion",
 	"type": "module",
 	"main": "index.js",
+	"exports": {
+		".": "./index.js"
+	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "node --test"
 	},
 	"repository": {
 		"type": "git",
@@ -26,7 +29,6 @@
 		"@ghasemkiani/base": "github:ghasemkiani/base",
 		"@ghasemkiani/dox": "github:ghasemkiani/dox",
 		"@ghasemkiani/ling": "github:ghasemkiani/ling",
-		"@ghasemkiani/wjsdom": "github:ghasemkiani/wjsdom",
-		"js-beautify": "^1.14.8"
+		"@ghasemkiani/xdom": "github:ghasemkiani/xdom"
 	}
 }

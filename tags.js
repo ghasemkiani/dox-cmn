@@ -1,5 +1,3 @@
-//	@ghasemkiani/dox-cmn/tags
-
 import {Dir, iwdir} from "./dir.js";
 import {Eol} from "./eol.js";
 import {Fragment} from "./fragment.js";

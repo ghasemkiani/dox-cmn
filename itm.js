@@ -1,14 +1,13 @@
-//	@ghasemkiani/dox-cmn/itm
-
 import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Itm extends Component {
-	async toRender(wnode) {
-		let dummy = wnode.wdocument.ch("div");
-		dummy.node.innerHTML = this.wnode.node.innerHTML;
-		dummy = dummy.wdocument.wrap(dummy.node);
-		this.context.parent.component.pub("item", dummy.wnodes);
+	async toRender(node) {
+		let component = this;
+		let {x} = component;
+		let dummy = x.dch("div");
+		dummy.innerHTML = component.node.innerHTML;
+		component.context.parent.component.pub("item", x.nodes(dummy));
 	}
 }
 

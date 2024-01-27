@@ -1,15 +1,15 @@
-//	@ghasemkiani/dox-cmn/msg
-
 import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Msg extends Component {
-	async toRender(wnode) {
-		let dummy = wnode.wdocument.ch("div");
-		await this.toRenderBody(dummy);
-		let msg = dummy.innerString;
-		let name = this.wnode.attr("name") || "message";
-		this.context.parent.component.pub(name, msg);
+	async toRender(node) {
+		let component = this;
+		let {x} = component;
+		let dummy = x.dch("div");
+		await component.toRenderBody(dummy);
+		let msg = x.toStrInner(dummy);
+		let name = x.attr(component.node, "name") || "message";
+		component.context.parent.component.pub(name, msg);
 	}
 }
 

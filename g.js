@@ -1,9 +1,10 @@
 import {Component} from "@ghasemkiani/dox";
 
 class G extends Component {
-	async toRender(wnode) {
+	async toRender(node) {
 		let component = this;
-		await component.toRenderBody(wnode);
+		let {x} = component;
+		await component.toRenderBody(node);
 	}
 }
 

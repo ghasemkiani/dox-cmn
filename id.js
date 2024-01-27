@@ -1,18 +1,20 @@
-//	@ghasemkiani/dox-cmn/id
-
 import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Id extends Component {
-	async toRender(wnode) {
-		let id = this.wnode.innerString.trim();
-		this.context.parent.component.pub("id", id);
+	async toRender(node) {
+		let component = this;
+		let {x} = component;
+		let id = x.toStrInner(component.node).trim();
+		component.context.parent.component.pub("id", id);
 	}
 }
 
 const iwid = {
 	onId(id) {
-		this.wnode.attr("id", id);
+		let component = this;
+		let {x} = component;
+		x.attr(component.node, "id", id);
 	},
 };
 

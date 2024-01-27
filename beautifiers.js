@@ -1,14 +1,13 @@
-import beautify from "js-beautify";
-
 import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
+import {beautify} from "@ghasemkiani/xdom";
 
-const {html, css, js} = beautify;
 
 class Beautifiers extends Component {
-	async toRender(wnode) {
-		if (!this.context.root.beautify) {
-			this.context.root.beautify = {html, css, js};
+	async toRender(node) {
+		let component = this;
+		if (!component.context.root.beautify) {
+			component.context.root.beautify = beautify;
 		}
 	}
 }

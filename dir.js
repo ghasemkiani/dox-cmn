@@ -4,15 +4,17 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Dir extends Component {
-	async toRender(wnode) {
-		let dir = this.wnode.innerString.trim();
+	async toRender(node) {
+		let {x} = this;
+		let dir = toStrInner(this.node);
 		this.context.parent.component.pub("dir", dir);
 	}
 }
 
 const iwdir = {
 	onDir(dir) {
-		this.wnode.attr("dir", dir);
+		let {x} = this;
+		x.attr(this.node, "dir", dir);
 	},
 };
 

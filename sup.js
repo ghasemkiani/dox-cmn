@@ -4,12 +4,14 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Sup extends Component {
-	async toRender(wnode) {
+	async toRender(node) {
+		let component = this;
+		let {x} = component;
 		let wn;
-		wnode.ch("sup", wnode => {
-			wn = wnode;
+		x.ch(node, "sup", node => {
+			wn = node;
 		});
-		await this.toRenderBody(wn);
+		await component.toRenderBody(wn);
 	}
 }
 

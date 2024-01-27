@@ -4,27 +4,30 @@ import {cutil} from "@ghasemkiani/base";
 import {Component} from "@ghasemkiani/dox";
 
 class Prop extends Component {
-	async toRender(wnode) {
-		let name = this.wnode.attr("name");
-		this.sub("name", function (data) {
+	async toRender(node) {
+		let component = this;
+		let {x} = component;
+		let name = x.attr(component.node, "name");
+		component.sub("name", (data) => {
 			name = data;
 		});
-		let value = this.wnode.attr("value");
-		this.sub("value", function (data) {
+		let value = x.attr(component.node, "value");
+		component.sub("value", (data) => {
 			value = data;
 		});
-		let dummy = wnode.wdocument.ch("div");
-		await this.toRenderBody(dummy);
+		let dummy = x.dch("div");
+		await component.toRenderBody(dummy);
 		if(!value) {
-			value = dummy.innerString;
+			value = x.toStrInner(dummy);
 		}
-		this.context.parent.component.pub("prop", {name, value});
+		component.context.parent.component.pub("prop", {name, value});
 	}
 }
 
 const iwprop = {
 	onProp({name, value}) {
-		this[name] = value;
+		let component = this;
+		component[name] = value;
 	},
 };
 
