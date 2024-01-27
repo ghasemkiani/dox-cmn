@@ -1,6 +1,6 @@
 {
 	"name": "@ghasemkiani/dox-cmn",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"description": "Common components for DOX document conversion",
 	"type": "module",
 	"main": "index.js",
