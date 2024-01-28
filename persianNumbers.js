@@ -1,6 +1,6 @@
 import {cutil} from "@ghasemkiani/base";
-import {Component} from "@ghasemkiani/dox";
 import {fa} from "@ghasemkiani/ling";
+import {Component} from "@ghasemkiani/dox";
 import {Context} from "@ghasemkiani/dox";
 
 class PersianNumbers extends Component {
