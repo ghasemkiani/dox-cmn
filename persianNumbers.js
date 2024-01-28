@@ -8,16 +8,21 @@ class PersianNumbers extends Component {
 		let component = this;
 		let {x} = component;
 		let context = component.context.parent;
+		let toRenderTextDefault = context.constructor.prototype.toRenderText.bind(context);
 		let flag = !/^\s*(off|no|false)\s*$/i.test(x.toStrInner(component.node).trim());
 		if (!flag) {
-			context.renderText = (text, node) => {
-				Context.prototype.renderText.call(component, text, node);
-			};
+			cutil.extend(context, {
+				async toRenderText(node, text) {
+					await toRenderTextDefault(node, text);
+				},
+			});
 		} else {
-			context.renderText = (text, node) => {
-				text = fa.toPersianNumbers(text);
-				Context.prototype.renderText.call(component, text, node);
-			};
+			cutil.extend(context, {
+				async toRenderText(node, text) {
+					text = fa.toPersianNumbers(text);
+					await toRenderTextDefault(node, text);
+				},
+			});
 		}
 	}
 }
