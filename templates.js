@@ -17,23 +17,7 @@ class Templates extends Component {
 		let uri = x.attr(component.node, "uri");
 		let cs = x.attr(component.node, "cs");
 		let folder = path.join(dirname, uri);
-		function dir(folder, prefix) {
-			for (let dirent of fs.readdirSync(folder, {withFileTypes: true})) {
-				let fn = path.join(dirent.path, dirent.name);
-				let tag = prefix + path.parse(dirent.name).name;
-				if (dirent.isDirectory()) {
-					dir(fn, tag + ".");
-				} else if (dirent.isFile() && /\.dox/i.test(fn)) {
-					let template = x.root(x.fromStr(new Textual({fn, cs}).read().string));
-					((renderer.translator ||= {})[ns] ||= {})[tag] = class extends TemplateComponent {
-						static {
-							cutil.extend(this.prototype, {template});
-						}
-					};
-				}
-			}
-		}
-		dir(folder, "");
+		renderer.addTemplateFolder(ns, folder, cs);
 	}
 }
 
