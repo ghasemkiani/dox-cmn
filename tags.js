@@ -21,6 +21,7 @@ import {Templates} from "./templates.js";
 import {G} from "./g.js";
 import {Beautifiers} from "./beautifiers.js";
 import {Include} from "./include.js";
+import {FCopy} from "./fcopy.js";
 
 const tags = {
 	dir: Dir,
@@ -46,6 +47,7 @@ const tags = {
 	g: G,
 	beautifiers: Beautifiers,
 	include: Include,
+	fcopy: FCopy,
 };
 
 export {
@@ -62,6 +64,7 @@ export {
 	Notoc,
 	Num,
 	Obj,
+	Frag,
 	Prop, iwprop,
 	Sup,
 	Title, iwtitle,
@@ -72,4 +75,5 @@ export {
 	G,
 	Beautifiers,
 	Include,
+	FCopy,
 };
