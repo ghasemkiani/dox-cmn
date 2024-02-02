@@ -10,6 +10,7 @@ import {Nonum} from "./nonum.js";
 import {Notoc} from "./notoc.js";
 import {Num} from "./num.js";
 import {Obj} from "./obj.js";
+import {Frag} from "./frag.js";
 import {Prop, iwprop} from "./prop.js";
 import {Sup} from "./sup.js";
 import {Title, iwtitle} from "./title.js";
@@ -34,6 +35,7 @@ const tags = {
 	notoc: Notoc,
 	num: Num,
 	obj: Obj,
+	frag: Frag,
 	prop: Prop,
 	sup: Sup,
 	title: Title,
