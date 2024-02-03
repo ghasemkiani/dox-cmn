@@ -22,6 +22,7 @@ class FCopy extends Component {
 			fn2 = path.join(context.dirname, uri2);
 		}
 		
+		await fs.promises.mkdir(path.dirname(fn2), {recursive: true});
 		await fs.promises.copyFile(fn1, fn2);
 	}
 }
