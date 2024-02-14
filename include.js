@@ -14,9 +14,9 @@ class Include extends Component {
 		let fn = path.join(component.context.dirname, uri);
 		try {
 			let n = x.root(x.fromStr(new Textual({fn, cs}).read().string));
-			let dirname = path.dirname(fn);
 			await component.toRenderAgain(n, node, ctx => {
-				ctx.dirname = dirname;
+				ctx.dirname = path.dirname(fn);
+				ctx.fnInclude = fn;
 			});
 		} catch (e) {
 			x.ch(node, "div[dir=ltr]", node => {
