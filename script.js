@@ -10,7 +10,12 @@ class Script extends Component {
 		let body = x.toText(component.node);
 		const AsyncFunction = async function () {}.constructor;
 		let f = new AsyncFunction ("node", "component", "context", "renderer", "templateComponent", "props", body);
-		await (f.call(component, node, component, context, renderer, context.templateComponent, context.templateComponent?.props));
+		try {
+			await (f.call(component, node, component, context, renderer, context.templateComponent, context.templateComponent?.props));
+		} catch (e) {
+			console.log(renderer.x.toStr(component.node));
+			throw e;
+		}
 	}
 }
 

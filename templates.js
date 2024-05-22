@@ -16,7 +16,7 @@ class Templates extends Component {
 		let dirname = context["dirname"];
 		let uri = x.attr(component.node, "uri");
 		let cs = x.attr(component.node, "cs");
-		let folder = path.join(dirname, uri);
+		let folder = path.isAbsolute(uri) ? uri : path.join(dirname, uri);
 		renderer.addTemplateFolder(ns, folder, cs);
 	}
 }
