@@ -9,7 +9,7 @@ class AtDir extends Component {
 		let {x} = component;
 		let {context} = component;
 		let uri = x.attr(component.node, "uri");
-		let dirname = path.join(context.dirname, uri);
+		let dirname = path.isAbsolute(uri) ? uri : path.join(context.dirname, uri);
 		await component.toRenderBody(node, context => cutil.assign(context, {dirname}));
 	}
 }
