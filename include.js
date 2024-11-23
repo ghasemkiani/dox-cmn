@@ -10,7 +10,8 @@ class Include extends Component {
 		let component = this;
 		let {x} = component;
 		let cs = x.attr(component.node, "cs");
-		let uri = x.attr(component.node, "uri");
+		// let uri = x.attr(component.node, "uri");
+		let uri = await component.toGetAttr("uri", node);
 		let fn = path.join(component.context.dirname, uri);
 		try {
 			let n = x.root(x.fromStr(new Textual({fn, cs}).read().string));
